@@ -11,9 +11,32 @@ p {
     color: #8b8b8bcc;
     font-family: verdana;
     font-size: 20px;
+    text-align: center;
 }
 
-button {
+ div{
+    display: block;
+    text-align: center;
+ }
+  
+  
+  button {
     background-color: #025157;
     color: #fff;
+  }
+
+  .contenedorImagenes {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagenCapterra img {
+    text-align: center;
+    width: 9%;
 }
+
+  .imagenCentral {
+    width: 70%;
+ }
+
