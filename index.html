@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head class="header">
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="img/matcha2.ico" />
     <title>Matcha</title>
   </head>
+  <header class="header">
+    <!-- Logo con link a la página principal -->
+    <a href="/index.html" class="logo">
+       <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha" />
+        Matcha
+      </a>
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+      <ul>
+       <a href="#"><li>Platform</li></a>
+       <a href="#"><li>Pricing</li></a>
+       <a href="#"> <li>Customers</li></a>
+       <a href="#"> <li>Resources</li></a>
+       <a href="#"><li>About</li></a>
+      </ul>
+    </nav>
+    <!-- Contenedor de acciones de usuario -->
+    <div class="actions">
+      <a href="/login">Sign In</a>
+      <button type="submit">Start free trial</button>
+    </div>
+  </header>
   <body>
+    <section class="main">
     <h1>Build your blog. Build your business.</h1>
-    <p>
-      Instantly publish articles, drive more traffic, grow your email list, and
-      see your blog´s impact on sales
-    </p>
+   
+    <h4>Instantly publish articles, drive more traffic, grow your email list, and see your blog’s impact on sales.</h4>
     <div>
       <form action="#">
         <input type="email" />
-        <button type="submit">Try it now &rarr;</button>
-      </form> <!--Form-->
+        <button type="submit" class="texto-boton">Try it now &rarr;</button>
+      </form>
+      <!--Form-->
     </div>
-    <p>
+    <p class="texto-promocional">
       Start publishing today with a <strong>free 7-day trial.</strong>
       <br />
       <strong>No credit card</strong> required.
     </p>
     <div class="imagenCapterra">
-        <img
+      <img
         src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png"
-        alt="Imagen Capterra"
+        alt="Captcha Capterra"
       />
     </div>
     <div class="contenedorImagenes">
-      <img class="imagenCentral"
-      src="https://getmatcha.com/wp-content/uploads/2019/09/intro_group_image.png"
-      alt="Intro Matcha"
-    /> <!--Imagenes centrales-->
+      <img
+        class="imagenCentral"
+        src="https://getmatcha.com/wp-content/uploads/2019/09/intro_group_image.png"
+        alt="Intro Matcha"
+      />
+      <!--Imagenes centrales-->
     </div>
+  </section>
   </body>
 </html>
