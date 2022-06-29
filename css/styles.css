@@ -12,10 +12,14 @@
   vertical-align: middle; /*Alinea verticalmente*/
   height: 100%;
   line-height: 45px;
+  text-align: center; /*Alinea texto de todo lo del nav al centro*/
 }
 
-.logo > *{
-  width: 20%;
+.logo > img, a {
+  width: 15%;
+  text-decoration: none;
+  color: #025157;
+  font-weight: bold;
 }
 
 .navbar {
@@ -25,12 +29,35 @@
   font-weight: 500;
 }
 
-.actions, a {
+
+.actions {
   width: 15%;
   text-align: right;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
+  text-emphasis: none;
+}
+
+.actions > * {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.actions a {
+  color: #67b54b;
+  text-decoration: none;
+}
+
+.actions button {
+  color: white;
+  background-color: #67b54b;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 0;
+  border-radius: 5px;
 }
 
 .main {
@@ -82,7 +109,7 @@ button {
   align-items: center;
 }
 
-.imagenCapterra img{
+.imagenCapterra img {
   text-align: center;
   width: 9%;
 }
