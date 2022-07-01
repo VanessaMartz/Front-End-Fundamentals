@@ -40,8 +40,8 @@
 }
 
 .actions > * {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 8px;
+  margin-left: 8px;
 }
 
 .actions a {
@@ -52,8 +52,8 @@
 .actions button {
   color: white;
   background-color: #67b54b;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 12px;
   padding-bottom: 12px;
   border: 0;
