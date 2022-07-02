@@ -5,7 +5,7 @@
   top: 0; /*Se agrego estas 3 posteriores lineas para arreglar el flujo roto por la posición fixed*/
   left: 0;
   right: 0;
-  background-color: #fffbf7; /*Arregla que el texto no se vea encimado cuando se hace scroll*/
+  background-color: #fff; /*Arregla que el texto no se vea encimado cuando se hace scroll*/
 }
 
 .header {
@@ -28,35 +28,55 @@
 .logo > img, a {
   width: 15%;
   text-decoration: none;
-  color: #025157;
+  color:#025157 ;
   font-weight: bold;
+  vertical-align: middle;
 }
 
 .navbar {
-  width: 65%;
+  width: 70%;
   text-align: center;
-  color: #025157;
-  font-weight: 500;
+  font-weight: bold;
+  color:#025157 ;
+  font-size: 1.1rem;
+  list-style-type: none; /*Quitar las viñetas de la lista*/
 }
 
+.navbar li a {
+  padding: 6px 25px 6px 25px;
+  border-radius: 20%;
+}
+
+.navbar li a:hover {
+  background-color: #67b54b;
+  color: #ffff;
+}
 
 .actions {
   width: 15%;
   text-align: right;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   text-emphasis: none;
 }
 
 .actions > * {
-  margin-right: 8px;
-  margin-left: 8px;
+  margin-right: 6px;
+  margin-left: 6px;
 }
 
 .actions a {
   color: #67b54b;
   text-decoration: none;
+  border-radius: 20%;
+  padding: 3px 3px;
+  
+}
+
+.actions a:hover {
+  background-color: #67b54b;
+  color: #ffff;
 }
 
 .actions button {
@@ -76,7 +96,7 @@
 }
 
 body {
-  background-color: #fffbf7;
+  background-color: #f8f9fa;
 }
 
 li {
