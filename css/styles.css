@@ -1,3 +1,11 @@
+.fixed-header {
+  position: fixed;
+  top: 0; /*Se agrego estas 3 posteriores lineas para arreglar el flujo roto por la posición fixed*/
+  left: 0;
+  right: 0;
+  background-color: #fff; /*Arregla que el texto no se vea encimado cuando se hace scroll*/
+}
+
 .header {
   margin-top: 40px;
   margin-left: 20px;
@@ -18,35 +26,55 @@
 .logo > img, a {
   width: 15%;
   text-decoration: none;
-  color: #025157;
+  color:#025157 ;
   font-weight: bold;
+  vertical-align: middle;
 }
 
 .navbar {
-  width: 65%;
+  width: 70%;
   text-align: center;
-  color: #025157;
-  font-weight: 500;
+  font-weight: bold;
+  color:#025157 ;
+  font-size: 1.1rem;
+  list-style-type: none; /*Quitar las viñetas de la lista*/
 }
 
+.navbar li a {
+  padding: 6px 25px 6px 25px;
+  border-radius: 20%;
+}
+
+.navbar li a:hover {
+  background-color: #67b54b;
+  color: #ffff;
+}
 
 .actions {
   width: 15%;
   text-align: right;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   text-emphasis: none;
 }
 
 .actions > * {
-  margin-right: 8px;
-  margin-left: 8px;
+  margin-right: 6px;
+  margin-left: 6px;
 }
 
 .actions a {
   color: #67b54b;
   text-decoration: none;
+  border-radius: 20%;
+  padding: 3px 3px;
+  
+}
+
+.actions a:hover {
+  background-color: #67b54b;
+  color: #ffff;
 }
 
 .actions button {
@@ -61,12 +89,13 @@
 }
 
 .main {
-  margin-top: 140px;
+  margin-top: 285px;
   text-align: center;
 }
 
 body {
   background-color: #ffff;
+
 }
 
 li {
@@ -78,6 +107,13 @@ h1 {
   text-align: center;
   font-size: 50px;
   font-family: 'Heebo', sans-serif;
+}
+
+h2 {
+  color: #025157;
+  text-align: justify;
+  font-size: 35px;
+  font-family: 'Heebo', sans-serif
 }
 
 h4 {
@@ -93,6 +129,16 @@ p {
   font-size: 20px;
   text-align: center;
   font-family: 'Heebo', sans-serif;
+}
+
+p.videoTexto {
+    color: #8b8b8bcc;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Heebo', sans-serif;
+    
+  
 }
 
 div {
@@ -118,4 +164,11 @@ button {
 
 .imagenCentral {
   width: 70%;
+}
+
+.promo {
+  display: flex;
+  width: 70%;
+  margin: 100px auto;
+  align-items: center; /*Alinea los items verticalmente al centro*/
 }
