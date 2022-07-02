@@ -40,7 +40,7 @@
     <!-- Contenedor de acciones de usuario -->
     <div class="actions">
       <a href="/login">Sign In</a>
-      <button type="submit">Start free trial</button>
+      <button class="action-button" type="submit">Start free trial</button>
     </div>
   </header>
 </section>
@@ -53,9 +53,9 @@
         Instantly publish articles, drive more traffic, grow your email list,
         and see your blog’s impact on sales.
       </h4>
-      <div>
+      <div class="general-buttons general-inputs">
         <form action="#">
-          <input type="email" />
+          <input type="email" autocomplete="off" class="input" placeholder="Enter your email"/>
           <button type="submit" class="texto-boton">Try it now &rarr;</button>
         </form>
         <!--Form-->
@@ -82,15 +82,21 @@
     </section>
     <!--Contenido previo-->
     <section class="promo">
-      <video controls>
+      <video controls
+        poster="videos/computer_code00_small.jpg">
         <source type="video/webm"
         src="videos/computer_code-preview.webm"/>
         <source tyoe="video/mp4"
         src="videos/computer_code-preview.mp4">
       </video>
-      <article>
+      <article class="publish general-buttons general-inputs">
         <h2>Publish to your blog in minutes, not hours.</h2>
         <p class="videoTexto">Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don’t have hours to create content that may or may not work. With Matcha, instantly publish from our library of 10,000+ professionally written articles and build your email list faster with our powerful conversion tool.</p>
+        <form action="#">
+          <p class="formTexto">Start publishing today:</p>
+          <input class="input" type="email" placeholder="Enter your email" style="width: 48%;">
+          <button>Start my Trial</button>
+        </form>
       </article>
     </section> <!--Videos-->
   </body>

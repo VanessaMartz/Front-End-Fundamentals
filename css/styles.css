@@ -1,11 +1,14 @@
+/*Sección contenedora de posicionamiento fixed del header*/
 .fixed-header {
   position: fixed;
   top: 0; /*Se agrego estas 3 posteriores lineas para arreglar el flujo roto por la posición fixed*/
   left: 0;
   right: 0;
-  background-color: #fff; /*Arregla que el texto no se vea encimado cuando se hace scroll*/
+  background-color: #F8F9FA; /*Arregla que el texto no se vea encimado cuando se hace scroll*/
+  z-index: 10;
 }
 
+/*Sección contenedora del header general*/
 .header {
   margin-top: 40px;
   margin-left: 20px;
@@ -88,13 +91,15 @@
   border-radius: 5px;
 }
 
+/*Sección contenedora de texto central*/
 .main {
   margin-top: 285px;
   text-align: center;
 }
 
+/*Generales*/
 body {
-  background-color: #f8f9fa;
+  background-color: #F8F9FA;
 }
 
 li {
@@ -104,7 +109,7 @@ li {
 h1 {
   color: #025157;
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   font-family: 'Heebo', sans-serif;
 }
 
@@ -129,15 +134,21 @@ p {
   text-align: center;
   font-family: 'Heebo', sans-serif;
 }
-
 p.videoTexto {
-    color: #8b8b8bcc;
+    color: #343434;
     font-family: sans-serif;
     font-size: 20px;
     text-align: justify;
-    font-family: 'Heebo', sans-serif;
-    
-  
+    font-family: 'Heebo', sans-serif;  
+}
+
+p.formTexto {
+  color: #025157;
+  font-family: sans-serif;
+  font-size: 18px;
+  text-align: left;
+  font-family: 'Heebo', sans-serif;
+  margin: auto;
 }
 
 div {
@@ -145,11 +156,70 @@ div {
   text-align: center;
 }
 
-button {
-  background-color: #025157;
+/*Botones generales*/
+.general-buttons button {
   color: #fff;
+  position:relative;
+  padding: 15px 26px;
+  border: unset;
+  border-radius: 15px;
+  z-index: 1;
+  background:  #025157;
+  font-weight: bold;
+  font-size: 16px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  z-index: 1;
+  margin: auto;
 }
 
+.general-buttons button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color:#67b54b;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+ }
+ 
+ .general-buttons button:hover {
+  color: #e8e8e8;
+ }
+ 
+ .general-buttons button:hover::before {
+  width: 100%;
+ }
+
+ /*Inputs generales*/
+ .general-inputs {
+  position: relative;
+ }
+ 
+ .general-inputs .input {
+  border: solid 1.5px #025157;
+  border-radius: 1.5rem;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #025157 ;
+  transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+  margin: auto;
+ }
+ 
+ .general-inputs input:focus, input:valid {
+  outline: none;
+  border: 1.5px solid #025157 ;
+ }
+ 
+/*Sección contenedora de imágenes centrales*/
 .contenedorImagenes {
   display: flexbox;
   justify-content: center;
@@ -165,9 +235,15 @@ button {
   width: 70%;
 }
 
+/*Sección contenedora de video y articulo*/
 .promo {
   display: flex;
+  padding: 10px 15px;
   width: 70%;
   margin: 100px auto;
   align-items: center; /*Alinea los items verticalmente al centro*/
+}
+
+.promo video, article {
+  padding: 10px 15px;
 }
