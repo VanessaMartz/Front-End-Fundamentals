@@ -1,5 +1,3 @@
-
-
 .fixed-header {
   position: fixed;
   top: 0; /*Se agrego estas 3 posteriores lineas para arreglar el flujo roto por la posición fixed*/
