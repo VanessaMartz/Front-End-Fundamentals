@@ -235,39 +235,41 @@ div {
   width: 70%;
   margin: 100px auto;
   align-items: center;
-  margin-top: 0;
+  margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
-.publish {
-  /* container styles if any */
-}
-
 .publish h3 {
-  font-family: "Alegreya", serif;
-  font-size: 40px;
-  line-height: 48px;
+  font-family: "Heebo", serif;
+  font-size: 35px;
+  line-height: 40px;
   color: #025157;
   text-align: justify;
+  margin-top: 0;
+  padding: 0 2rem;
 }
 
 .publish > p {
   font-size: 16px;
   color: #343434;
-  line-height: 1.5;
+  line-height: 1.2;
+  margin-top: 0;
   margin-bottom: 20px;
   text-align: justify;
+  padding: 0 2rem;
 }
 
 .publish > form {
   display: flex;
-  row-gap: 1rem;
+  flex-direction: column;
+  margin-top: 0;
 }
 
 .publish > form p {
   color: #025157;
-  margin-right: 18px;
+  font-size: 1rem;
   text-align: justify;
+  padding: 0 2rem;
 }
 
 .explanatory-video {
