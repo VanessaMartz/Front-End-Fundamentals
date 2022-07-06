@@ -4,8 +4,8 @@
   top: 0; /*Se agrego estas 3 posteriores lineas para arreglar el flujo roto por la posición fixed*/
   left: 0;
   right: 0;
-  background-color: #F8F9FA; /*Arregla que el texto no se vea encimado cuando se hace scroll*/
-  z-index: 10;
+  background-color: #f8f9fa;
+  z-index: 10; /*Arregla que el texto no se vea encimado cuando se hace scroll*/
 }
 
 /*Sección contenedora del header general*/
@@ -26,10 +26,11 @@
   text-align: center; /*Alinea texto de todo lo del nav al centro*/
 }
 
-.logo > img, a {
+.logo > img,
+a {
   width: 15%;
   text-decoration: none;
-  color:#025157 ;
+  color: #025157;
   font-weight: bold;
   vertical-align: middle;
 }
@@ -38,7 +39,7 @@
   width: 70%;
   text-align: center;
   font-weight: bold;
-  color:#025157 ;
+  color: #025157;
   font-size: 1.1rem;
   list-style-type: none; /*Quitar las viñetas de la lista*/
 }
@@ -72,7 +73,6 @@
   text-decoration: none;
   border-radius: 20%;
   padding: 3px 3px;
-  
 }
 
 .actions a:hover {
@@ -104,8 +104,7 @@
 
 /*Generales*/
 body {
-  background-color: #F8F9FA;
-
+  background-color: #f8f9fa;
 }
 
 li {
@@ -116,13 +115,12 @@ h1 {
   color: #025157;
   text-align: center;
   font-size: 60px;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
 }
-
 
 h4 {
   color: #8b8b8bcc;
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
   font-size: 20px;
   text-align: center;
 }
@@ -132,16 +130,7 @@ p {
   font-family: sans-serif;
   font-size: 20px;
   text-align: center;
-  font-family: 'Heebo', sans-serif;
-}
-
-p.formTexto {
-  color: #025157;
-  font-family: sans-serif;
-  font-size: 18px;
-  text-align: left;
-  font-family: 'Heebo', sans-serif;
-  margin: auto;
+  font-family: "Heebo", sans-serif;
 }
 
 div {
@@ -152,16 +141,16 @@ div {
 /*Botones generales*/
 .general-buttons button {
   color: #fff;
-  position:relative;
+  position: relative;
   padding: 15px 26px;
   border: unset;
   border-radius: 15px;
   z-index: 1;
-  background:  #025157;
+  background: #025157;
   font-weight: bold;
   font-size: 16px;
-  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   transition: all 250ms;
   overflow: hidden;
   z-index: 1;
@@ -177,55 +166,56 @@ div {
   height: 100%;
   width: 0;
   border-radius: 15px;
-  background-color:#67b54b;
+  background-color: #67b54b;
   z-index: -1;
-  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-  transition: all 250ms
- }
- 
- .general-buttons button:hover {
-  color: #e8e8e8;
- }
- 
- .general-buttons button:hover::before {
-  width: 100%;
- }
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
 
- /*Inputs generales*/
- .general-inputs {
+.general-buttons button:hover {
+  color: #e8e8e8;
+}
+
+.general-buttons button:hover::before {
+  width: 100%;
+}
+
+/*Inputs generales*/
+.general-inputs {
   position: relative;
- }
- 
- .general-inputs .input {
+}
+
+.general-inputs .input {
   border: solid 1.5px #025157;
   border-radius: 1.5rem;
   background: none;
   padding: 1rem;
   font-size: 1rem;
-  color: #025157 ;
-  transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+  color: #025157;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: auto;
- }
- 
- .general-inputs input:focus, input:valid {
+}
+
+.general-inputs input:focus,
+input:valid {
   outline: none;
-  border: 1.5px solid #025157 ;
- }
- 
+  border: 1.5px solid #025157;
+}
+
 /*Sección contenedora de imágenes centrales*/
-.contenedorImagenes {
+.container-images {
   display: flexbox;
   justify-content: center;
   align-items: center;
 }
 
-.imagenCapterra img {
+.image-capterra img {
   text-align: center;
   width: 9%;
 }
 
-.imagenCentral {
+.central-image {
   width: 70%;
 }
 
@@ -245,7 +235,7 @@ div {
   line-height: 40px;
   color: #025157;
   text-align: justify;
-  margin-top: 0%;;
+  margin-top: 0%;
   padding: 0 2rem;
 }
 
@@ -286,9 +276,8 @@ div {
 }
 
 /*Sección contendora de ecommerce*/
-
 .ecommerce {
-  display:flex;
+  display: flex;
   background-color: #a1d683;
   align-items: center;
   justify-content: space-around;
@@ -302,7 +291,7 @@ div {
 }
 
 .brands h2 {
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
   font-size: 40px;
   line-height: 60px;
   margin-bottom: 0%;
@@ -327,111 +316,110 @@ div {
 }
 
 /*Carrusel ecommerce*/
-			.carrusel {
-				position: relative;
-				box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-			
-			}
+.carrusel {
+  position: relative;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+}
 
-			.carrusel-inner {
-				position: relative;
-				overflow: hidden;
-				width: 100%;
-				height: calc( 300px + 3em);
-			}
+.carrusel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: calc(300px + 3em);
+}
 
-			.carrusel-open:checked + .carrusel-item {
-				position: static;
-				opacity: 100;
-			}
+.carrusel-open:checked + .carrusel-item {
+  position: static;
+  opacity: 100;
+}
 
-			.carrusel-item {
-				position: absolute;
-				opacity: 0;
-				-webkit-transition: opacity 0.6s ease-out;
-				transition: opacity 0.6s ease-out;
-			}
+.carrusel-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
 
-			.carrusel-item img {
-				display: block;
-				height: auto;
-				max-width: 100%;
-			}
+.carrusel-item img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
 
-			.carrusel-control {
-				background: rgba(0, 0, 0, 0.28);
-				border-radius: 50%;
-				color: #fff;
-				cursor: pointer;
-				display: none;
-				font-size: 40px;
-				height: 40px;
-				line-height: 35px;
-				position: absolute;
-				top: 50%;
-				-webkit-transform: translate(0, -50%);
-				cursor: pointer;
-				-ms-transform: translate(0, -50%);
-				transform: translate(0, -50%);
-				text-align: center;
-				width: 40px;
-				z-index: 10;
-			}
+.carrusel-control {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
 
-			.carrusel-control.prev {
-				left: 2%;
-			}
+.carrusel-control.prev {
+  left: 2%;
+}
 
-			.carrusel-control.next {
-				right: 2%;
-			}
+.carrusel-control.next {
+  right: 2%;
+}
 
-			.carrusel-control:hover {
-				background: rgba(0, 0, 0, 0.8);
-				color: #aaaaaa;
-			}
+.carrusel-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
 
-			#carrusel-1:checked ~ .control-1,
-			#carrusel-2:checked ~ .control-2,
-			#carrusel-3:checked ~ .control-3 {
-				display: block;
-			}
+#carrusel-1:checked ~ .control-1,
+#carrusel-2:checked ~ .control-2,
+#carrusel-3:checked ~ .control-3 {
+  display: block;
+}
 
-			.carrusel-indicador {
-				list-style: none;
-				margin: 0;
-				padding: 0;
-				position: absolute;
-				bottom: 2%;
-				left: 0;
-				right: 0;
-				text-align: center;
-				z-index: 10;
-			}
+.carrusel-indicador {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
 
-			.carrusel-indicador li {
-				display: inline-block;
-				margin: 0 5px;
-			}
+.carrusel-indicador li {
+  display: inline-block;
+  margin: 0 5px;
+}
 
-			.carrusel-circulo {
-				color: #828282;
-				cursor: pointer;
-				display: block;
-				font-size: 35px;
-			}
+.carrusel-circulo {
+  color: #828282;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
 
-			.carrusel-circulo:hover {
-				color: #aaaaaa;
-			}
+.carrusel-circulo:hover {
+  color: #aaaaaa;
+}
 
-			#carrusel-1:checked ~ .control-1 ~ .carrusel-indicador 
-			 	li:nth-child(1) .carrusel-circulo,
-			#carrusel-2:checked ~ .control-2 ~ .carrusel-indicador 
-			 	 li:nth-child(2) .carrusel-circulo,
-			#carrusel-3:checked ~ .control-3 ~ .carrusel-indicador 
-			 	 li:nth-child(3) .carrusel-circulo {
-				color: #025157;
-			}
+#carrusel-1:checked ~ .control-1 ~ .carrusel-indicador 
+li:nth-child(1) .carrusel-circulo,
+#carrusel-2:checked ~ .control-2 ~ .carrusel-indicador 
+li:nth-child(2) .carrusel-circulo,
+#carrusel-3:checked ~ .control-3 ~ .carrusel-indicador 
+li:nth-child(3) .carrusel-circulo {
+	color: #025157;
+}
 
 			
